@@ -5,7 +5,7 @@ function App() {
 
   const fetchData = async () => {
     try {
-      const res = await fetch("API_URL");
+      const res = await fetch("https://jsonplaceholder.typicode.com/users");
       const result = await res.json();
       setData(result);
     } catch (err) {
